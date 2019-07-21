@@ -11,7 +11,7 @@ class snake {
     for (PVector v : tail) {
       rect(v.x, v.y, scale, scale);
     }
-    fil(255);
+    fill(255);
     rect(x, y, scale, scale);
   }
   public void changeDir(int x, int y) {
