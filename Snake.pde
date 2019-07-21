@@ -7,10 +7,11 @@ class snake {
     y = windowsize/2;
   }
   public void show() {
-    fill(255);
+    fill(175);
     for (PVector v : tail) {
       rect(v.x, v.y, scale, scale);
     }
+    fil(255);
     rect(x, y, scale, scale);
   }
   public void changeDir(int x, int y) {
