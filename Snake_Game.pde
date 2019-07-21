@@ -1,4 +1,4 @@
-final static int windowsize = 590;
+final static int windowsize = 600;
 final static int scale = 20;
 snake x = new snake();
 food food = new food();
