@@ -1,10 +1,10 @@
 class food {
   int x, y, cols, rows;
   food() {
-   cols = (windowsize - 20)/scale;
-   rows = (windowsize - 20)/scale;
-   x = floor(random(cols)) * scale + 10;
-   y = floor(random(rows)) * scale + 10;
+   cols = (windowsize)/scale;
+   rows = (windowsize)/scale;
+   x = floor(random(cols)) * scale;
+   y = floor(random(rows)) * scale;
   }
   public void display() {
     fill(255,0,0);
