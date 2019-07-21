@@ -18,7 +18,6 @@ void draw() {
   x.death();
   x.update();
   x.show();
-  food.checkBounds();
   food.display();
 }
 
