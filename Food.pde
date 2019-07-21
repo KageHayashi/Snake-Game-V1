@@ -1,8 +1,8 @@
 class food {
   int x, y, cols, rows;
   food() {
-   cols = windowsize/scale;
-   rows = windowsize/scale;
+   cols = windowsize/scale - 20;
+   rows = windowsize/scale - 20;
    x = floor(random(cols)) * scale;
    y = floor(random(rows)) * scale;
   }
