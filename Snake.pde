@@ -25,12 +25,24 @@ class snake {
       }
       tail.add(new PVector(x, y));
     }
-
     x = x + x_vel*scale;
     y = y + y_vel*scale;
+    
+    if (x > windowsize) {
+      x = 0;
+    } 
+    if (x < 0) {
+      x = windowsize;
+    }
+    if (y > windowsize) {
+      y = 0;
+    }
+    if (y < 0) {
+      y = windowsize;
+    }
 
-    x = constrain(x, 0, width-scale);
-    y = constrain(y, 0, height-scale);
+    //x = constrain(x, 0, width-scale);
+    //y = constrain(y, 0, height-scale);
   }
   public boolean eat(food food) {
     if (x == food.x && y == food.y) {
