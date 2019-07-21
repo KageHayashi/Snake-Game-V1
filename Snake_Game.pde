@@ -6,7 +6,7 @@ int cols = windowsize/scale;
 int rows = windowsize/scale;
 
 void setup() {
-  rectMode(CENTER);
+  //rectMode(CENTER);
   size(600,600);
 }
 
